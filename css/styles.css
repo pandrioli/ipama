@@ -1,0 +1,328 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #faf3dd;
+  font-size: 10px;
+}
+ul, ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.main_header{
+  background-color: #8fc0a9;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+.main_header input {
+  height: 2em;
+  vertical-align: middle;
+  font-size: 1.5em;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.header_icon {
+  display: inline-block;
+  background-color: #CCC;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.logo{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+.titulo{
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3em;
+}
+
+.toggle_nav {
+  display: none;
+}
+
+.atajo {
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  top:70px;
+  left:0;
+  background-color: #1474ab;
+  z-index: 1;
+  transition: 300ms;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.toggle_nav:checked ~ .atajo {
+  width: 100%;
+}
+
+.atajo li{
+  display: block;
+  padding: 0 40px;
+  font-size: 15px;
+  border-bottom: 1px solid white;
+}
+.atajo a{
+  display: block;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
+.container-banner{
+  background-color: #142b3b;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.imagen{
+  overflow: hidden;
+  opacity: .5;
+}
+
+.mision-vision{
+  display: table;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.container-products{
+  max-width: 1200px;
+  height: 700px;
+  background-color: #8fc0a9;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.columna{
+  width: 100%;
+  background-color: #8fc0a9;
+  color: black;
+  text-align: center;
+}
+.columna li{
+  display: inline-block;
+  padding-top: 10px;
+}
+.columna li a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  background-color: #f1e8c0;
+  color: black;
+  font-size: 1em;
+  line-height: 2em;
+}
+.box{
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.main-footer{
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #142b3b;
+  margin: auto;
+}
+.main-footer li{
+  display: inline-block;
+  font-size: 1.2em;
+}
+.main-footer a{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+/* registro */
+
+.container-registro{
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+.image-registro{
+  height: 150px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.formulario{
+  width: 100%;
+  background-color: #c8d5b9;
+  padding: 0 0 0 25px;
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.formulario input {
+  width: 80%;
+}
+
+.formulario select {
+  background-color: #f1e8c0;
+}
+
+.formulario textarea {
+  width: 80%;
+}
+
+.formulario button {
+  background-color: #f1e8c0;
+}
+
+.titulo-formulario{
+  font-size: 1.5em;
+}
+
+/*preguntas*/
+
+.container-preguntas {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+
+@media (min-width: 500px) {
+  .titulo {
+    display: inline-block;
+  }
+  .imagen {
+    opacity: 1;
+    float: left;
+    width: 50%;
+  }
+  .imagen img {
+    width: 500px;
+  }
+  .mision-vision {
+    width: 50%;
+    padding-top: 10vw;
+    padding-right: 10vw;
+    position: relative;
+    top: 0;
+    float: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main_header label {
+    display: none;
+  }
+  .main_header input {
+    width: 20%;
+  }
+  .atajo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    line-height: 70px;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .atajo li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .atajo a {
+    padding: 0;
+  }
+
+  .imagen img {
+    width: auto;
+    height: 500px;
+  }
+
+  .mision-vision {
+    padding: 100px 20px 0px 20px;
+    font-size: 2.3em;
+  }
+
+  .columna {
+    width: 30%;
+    float: left;
+    font-size: 2em;
+  }
+
+  .columna li {
+    display: block;
+  }
+
+  .columna li a {
+    width: 90%;
+  }
+
+  .box {
+    margin-top: 0;
+    width: 70%;
+    float: left;
+  }
+
+  /* registro */
+
+  .image-registro{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .image-registro img {
+    height: 800px;
+    width: auto;
+  }
+
+  .formulario{
+    float: left;
+    width: 50%;
+    height: 800px;
+    background-color: #c8d5b9;
+    padding: 0 0 0 25px;
+    font-size: 1.5em;
+    overflow: hidden;
+  }
+
+}
